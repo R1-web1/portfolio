@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio d'un étudiant en informatique — développement web, projets IT, compétences et parcours." />
+  <meta name="keywords" content="portfolio, étudiant informatique, développeur web, stage, alternance, projets IT" />
+  <title>Erwan Pichet — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Icons (Lucide via CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+<!-- ===================== LOADER ===================== -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">EP<span style="color:var(--text)">.</span></div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Erwan<span class="dot">.</span>P</a>
+
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#parcours">Parcours</a></li>
+      <li><a href="#veille">Veille IT</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="#" class="btn-outline" download>CV ↓</a>
+      <button class="burger" id="burger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-link">À propos</a>
+    <a href="#skills" class="mobile-link">Compétences</a>
+    <a href="#projects" class="mobile-link">Projets</a>
+    <a href="#certifications" class="mobile-link">Certifications</a>
+    <a href="#parcours" class="mobile-link">Parcours</a>
+    <a href="#veille" class="mobile-link">Veille IT</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="blink"></span>
+          Disponible pour alternance / stage
+        </div>
+
+        <h1 class="hero-name reveal">
+          Erwan<br><span class="accent">Pichet</span>
+        </h1>
+        <p class="hero-role reveal">// Étudiant en informatique </p>
+        <p class="hero-desc reveal">
+          Passionné par l'administration des systèmes, la gestion des réseaux et les nouvelles technologies, je conçois et maintiens des infrastructures fiables et sécurisées. Fraîchement diplômé, je suis à la recherche d'une alternance ou d'un stage pour mettre mes compétences au service de projets ambitieux, tout en élargissant mes connaissances IT pour devenir un profil polyvalent et complet.
+        </p>
+        <div class="hero-ctas reveal">
+          <a href="#projects" class="btn-primary">
+            <i data-lucide="folder-open" style="width:16px;height:16px"></i>
+            Voir mes projets
+          </a>
+          <a href="#contact" class="btn-ghost">
+            <i data-lucide="mail" style="width:16px;height:16px"></i>
+            Me contacter
+          </a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div>
+            <div class="stat-num">8+</div>
+            <div class="stat-label">Projets réalisés</div>
+          </div>
+          <div>
+            <div class="stat-num">3</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div>
+            <div class="stat-num">2</div>
+            <div class="stat-label">Ans de formation</div>
+          </div>
+          <div>
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-avatar reveal">
+        <div class="avatar-inner">EP</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-label reveal">01 — À propos</p>
+    <h2 class="section-title reveal">Qui suis-<span>je</span> ?</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Je suis fraîchement diplômé en <strong>BTS Services Informatiques aux Organisations (SIO)</strong>, option SISR, passionné par l'administration des systèmes, les réseaux et la cybersécurité. Mon objectif est de concevoir et maintenir des infrastructures fiables, sécurisées et performantes.
+        </p>
+        <p>
+          Je recherche activement une <strong>alternance</strong> ou un <strong>stage</strong> en administration systèmes et réseaux, où je pourrais contribuer à des projets concrets tout en continuant à progresser. Rigoureux, curieux et autonome, j'apprends vite et j'aime relever de nouveaux défis. Ma curiosité me pousse également à élargir mes compétences IT afin d'avoir une vision globale et devenir un profil plus complet.
+        </p>
+        <p>
+          En dehors de l'administration système et réseau, je m'intéresse à la veille technologique, à la cybersécurité, ainsi qu'à des domaines complémentaires comme le scripting, le cloud et l'open source.
+        </p>
+        <div class="about-tag-row">
+          <span class="tag">Recherche alternance</span>
+          <span class="tag">Administrateur systèmes et réseaux</span>
+          <span class="tag">BTS SIO SISR</span>
+          <span class="tag">Disponible sept. 2026</span>
+        </div>
+      </div>
+
+      <div class="soft-skills reveal">
+        <div class="soft-skill-item">
+          <div class="soft-icon"><i data-lucide="zap" style="width:18px;height:18px"></i></div>
+          <div>
+            <h4>Autonomie & initiative</h4>
+            <p>Capable de gérer des projets de A à Z, de la conception au déploiement.</p>
+          </div>
+        </div>
+        <div class="soft-skill-item">
+          <div class="soft-icon"><i data-lucide="users" style="width:18px;height:18px"></i></div>
+          <div>
+            <h4>Travail en équipe</h4>
+            <p>Expérience en méthode Agile/Scrum, collaboration sur projets.</p>
+          </div>
+        </div>
+        <div class="soft-skill-item">
+          <div class="soft-icon"><i data-lucide="book-open" style="width:18px;height:18px"></i></div>
+          <div>
+            <h4>Curiosité & apprentissage</h4>
+            <p>Veille techno quotidienne, auto-formation continue sur les nouvelles technos.</p>
+          </div>
+        </div>
+        <div class="soft-skill-item">
+          <div class="soft-icon"><i data-lucide="target" style="width:18px;height:18px"></i></div>
+          <div>
+            <h4>Rigueur & précision</h4>
+            <p>Attention aux détails, code propre, commenté et bien documenté.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="section">
+  <div class="container">
+    <p class="section-label reveal">02 — Compétences</p>
+    <h2 class="section-title reveal">Stack <span>technique</span></h2>
+
+    <div class="skills-categories">
+      <!-- Systèmes et Virtualisation -->
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-card-icon"><i data-lucide="monitor" style="width:18px;height:18px"></i></div>
+          <h3>Systèmes & Virtualisation</h3>
+        </div>
+        <div class="skill-bar-list">
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Linux (Debian / Ubuntu)</span><span class="muted">65%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Windows Server</span><span>70%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Virtualisation (VMware / Proxmox)</span><span>75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Scripting (Bash / Powershell)</span><span>60%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+          </div>
+        </div>
+        <div class="skill-badges" style="margin-top:16px">
+          <span class="skill-badge">Linux</span>
+          <span class="skill-badge">Windows Server</span>
+          <span class="skill-badge">Bash</span>
+          <span class="skill-badge">Powershell</span>
+          <span class="skill-badge">VMware</span>
+          <span class="skill-badge">Proxmox</span>
+        </div>
+      </div>
+
+      <!-- Réseaux -->
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-card-icon"><i data-lucide="server" style="width:18px;height:18px"></i></div>
+          <h3>Réseaux</h3>
+        </div>
+        <div class="skill-bar-list">
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>TCP/IP / Modèle OSI</span><span>80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>VLAN / DHCP / DNS</span><span>75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Cisco</span><span>65%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Analyse réseau (Wireshark)</span><span>70%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+          </div>
+        </div>
+        <div class="skill-badges" style="margin-top:16px">
+          <span class="skill-badge">TCP/IP</span>
+          <span class="skill-badge">VLAN</span>
+          <span class="skill-badge">DNS</span>
+          <span class="skill-badge">DHCP</span>
+          <span class="skill-badge">Cisco</span>
+          <span class="skill-badge">Wireshark</span>
+        </div>
+      </div>
+
+      <!-- Outils -->
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-card-icon"><i data-lucide="wrench" style="width:18px;height:18px"></i></div>
+          <h3>Cybersécurité & Outils</h3>
+        </div>
+        <div class="skill-bar-list">
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Analyse de vulnérabilités</span><span>60%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Pentest (bases)</span><span>50%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="50"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Sécurité réseau (firewall, IDS/IPS)</span><span>62%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="62"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Docker / Git / CI-CD</span><span>60%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+          </div>
+        </div>
+        <div class="skill-badges" style="margin-top:16px">
+          <span class="skill-badge">Nmap</span>
+          <span class="skill-badge">Burp Suite</span>
+          <span class="skill-badge">Firewall</span>
+          <span class="skill-badge">IDS</span>
+          <span class="skill-badge">Docker</span>
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">SIEM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="section-label reveal">03 — Projets IT</p>
+    <h2 class="section-title reveal">Ce que j'ai <span>construit</span></h2>
+
+    <div class="project-filters reveal">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="sys">Systèmes</button>
+      <button class="filter-btn" data-filter="res">Réseaux</button>
+      <button class="filter-btn" data-filter="superv">Supervision</button>
+      <button class="filter-btn" data-filter="sec">Sécurité</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <div class="project-card reveal" data-categories="sys">
+        <div class="project-img" style="background:linear-gradient(135deg,#0d2040,#1a3a5c)">🧪</div>
+        <div class="project-body">
+          <div class="project-techs">
+            <span class="tech-pill">Proxmox</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">Linux</span>
+            <span class="tech-pill">Virtualisation</span>
+          </div>
+          <h3>Homelab Virtualisé (Proxmox)</h3>
+          <p>Mise en place d'un homelab sous Proxmox avec plusieurs machines virtuelles et conteneurs Docker (serveur web, cloud, VPN), incluant un NAS pour le stockage via SMB/CIFS. </p>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i data-lucide="github" style="width:13px;height:13px"></i> --
+            </a>
+            <a href="#" class="project-link">
+              <i data-lucide="external-link" style="width:13px;height:13px"></i> Fait
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-categories="superv">
+        <div class="project-img" style="background:linear-gradient(135deg,#0a2010,#0d3520)">📊</div>
+        <div class="project-body">
+          <div class="project-techs">
+            <span class="tech-pill">Centreon</span>
+            <span class="tech-pill">Linux</span>
+            <span class="tech-pill">SNMP</span>
+            <span class="tech-pill">Monitoring</span>
+          </div>
+          <h3>Supervision Infrastructure (Centreon)</h3>
+          <p>Mise en place d'une plateforme de supervision avec Centreon pour surveiller les équipements réseau et serveurs. Configuration des hôtes, services, alertes et dashboards de monitoring.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i data-lucide="github" style="width:13px;height:13px"></i> Fait
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-categories="res">
+        <div class="project-img" style="background:linear-gradient(135deg,#1a0d30,#2d1545)">☁️</div>
+        <div class="project-body">
+          <div class="project-techs">
+            <span class="tech-pill">NextCloud</span>
+            <span class="tech-pill">Active Directory</span>
+            <span class="tech-pill">LDAP</span>
+            <span class="tech-pill">Linux</span>
+          </div>
+          <h3>Plateforme Cloud Interne (NextCloud + AD)</h3>
+          <p>Déploiement d'une solution de collaboration Nextcloud interconnectée avec un Active Directory. Gestion des utilisateurs via LDAP, stockage centralisé et sécurisation des accès.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i data-lucide="github" style="width:13px;height:13px"></i> --
+            </a>
+            <a href="#" class="project-link">
+              <i data-lucide="external-link" style="width:13px;height:13px"></i> Fait
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-categories="sec">
+        <div class="project-img" style="background:linear-gradient(135deg,#1a1200,#2e2000)">🔐</div>
+        <div class="project-body">
+          <div class="project-techs">
+            <span class="tech-pill">Nmap</span>
+            <span class="tech-pill">Kali Linux</span>
+            <span class="tech-pill">Pentest</span>
+          </div>
+          <h3>Mini lab pentest</h3>
+          <p>Réalisation de scans réseau et tests de sécurité sur un environnement lab (machines vulnérables type Metasploitable).</p>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i data-lucide="github" style="width:13px;height:13px"></i> 
+            </a>
+            <a href="#" class="project-link">
+              <i data-lucide="external-link" style="width:13px;height:13px"></i> Fait
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-categories="res">
+        <div class="project-img" style="background:linear-gradient(135deg,#001a1a,#003333)">🔎</div>
+        <div class="project-body">
+          <div class="project-techs">
+            <span class="tech-pill">Wireshark</span>
+            <span class="tech-pill">TCP/IP</span>
+            <span class="tech-pill">Analyse</span>
+          </div>
+          <h3>Analyse réseau / détection</h3>
+          <p>Analyse de trafic réseau avec Wireshark pour identifier anomalies, protocoles et comportements suspects.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i data-lucide="github" style="width:13px;height:13px"></i> Fait
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-categories="sys">
+        <div class="project-img" style="background:linear-gradient(135deg,#1a0010,#2e0020)">⚙️</div>
+        <div class="project-body">
+          <div class="project-techs">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Automation</span>
+            <span class="tech-pill">SSH</span>
+            <span class="tech-pill">Linux</span>
+            <span class="tech-pill">API</span>
+          </div>
+          <h3>Automatisation d'administration système</h3>
+          <p>Développement de scripts Python pour automatiser des tâches d'administration système : déploiement de services, exécution de commandes à distance (SSH), collecte d'informations et monitoring basique.
+             Utilisation de bibliothèques comme Paramiko et intégration avec des API.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i data-lucide="github" style="width:13px;height:13px"></i> --
+            </a>
+            <a href="#" class="project-link">
+              <i data-lucide="external-link" style="width:13px;height:13px"></i> En cours
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATIONS ===================== -->
+<section id="certifications" class="section">
+  <div class="container">
+    <p class="section-label reveal">04 — Certifications</p>
+    <h2 class="section-title reveal">Mes <span>certifications</span></h2>
+
+    <div class="certs-grid">
+
+
+      <div class="cert-card reveal">
+        <div class="cert-org">W3Schools</div>
+        <h3>C Developer</h3>
+        <div class="cert-date">December 2026</div>
+        <a href="#" class="cert-link">
+          Voir le badge <i data-lucide="arrow-right" style="width:12px;height:12px"></i>
+        </a>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-org">W3Schools</div>
+        <h3>Bash Developer</h3>
+        <div class="cert-date">Août 2026</div>
+        <a href="#" class="cert-link">
+          Voir le badge <i data-lucide="arrow-right" style="width:12px;height:12px"></i>
+        </a>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-org">W3Schools</div>
+        <h3>MySQL Developer </h3>
+        <div class="cert-date">Juillet 2026</div>
+        <a href="#" class="cert-link">
+          Voir le badge <i data-lucide="arrow-right" style="width:12px;height:12px"></i>
+        </a>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-org">W3Schools</div>
+        <h3>Python Developer </h3>
+        <div class="cert-date">Mai 2026</div>
+        <a href="#" class="cert-link">
+          Voir le badge <i data-lucide="arrow-right" style="width:12px;height:12px"></i>
+        </a>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-org">Cisco — NetAcad</div>
+        <h3>CCNA : Introduction to Cybersecurity</h3>
+        <div class="cert-date">Décembre 2024</div>
+        <a href="https://www.credly.com/badges/2cc8db9c-f531-4dfd-bde7-08335d4c93c1" target="_blank" rel="noopener noreferrer" class="cert-link">
+          Voir le badge <i data-lucide="arrow-right" style="width:12px;height:12px"></i>
+        </a>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-org">Pix</div>
+        <h3>Certification Pix</h3>
+        <div class="cert-date">Février 2025</div>
+        <a href="certifications-portfolio/certification-pix-20250211.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+          Voir le badge <i data-lucide="arrow-right" style="width:12px;height:12px"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARCOURS ===================== -->
+<section id="parcours" class="section">
+  <div class="container">
+    <p class="section-label reveal">05 — Parcours</p>
+    <h2 class="section-title reveal">Mon <span>itinéraire</span></h2>
+
+    <div class="parcours-tabs reveal">
+      <button class="tab-btn active" data-tab="academique">📚 Académique</button>
+      <button class="tab-btn" data-tab="professionnel">💼 Professionnel</button>
+    </div>
+
+    <!-- Académique -->
+    <div class="timeline active" id="tab-academique">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2023 — 2025</div>
+        <div class="tl-card">
+          <h3>BTS SIO — Option SISR — Mention Bien</h3>
+          <div class="tl-where">Lycée Jean Mermoz, Montpellier</div>
+          <p>Services Informatiques aux Organisations, spécialité Solutions d'Infrastructures Systèmes et Réseaux. Formation orientée administration des systèmes, gestion des réseaux et cybersécurité.</p>
+          <ul>
+            <li>Administration des systèmes et des réseaux</li>
+            <li>Gestion des infrastructures informatiques</li>
+            <li>Cybersécurité et sécurisation des réseaux</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2020 — 2023</div>
+        <div class="tl-card">
+          <h3>Baccalauréat Général — Mention Bien</h3>
+          <div class="tl-where">Lycée Jean Monnet, Montpellier</div>
+          <p>Spécialités : Mathématiques, Sciences de la vie et de la terre (SVT), Sciences économiques et sociales (SES). </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Professionnel -->
+    <div class="timeline" id="tab-professionnel">
+
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Juin — Septembre 2025</div>
+        <div class="tl-card">
+          <h3>Préparateur de commandes aux surgelés</h3>
+          <div class="tl-where">Interim - U Logistique</div>
+          <p>Préparation des commandes en fonction des bons de commande et des spécifications des clients avec système de voice picking.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Mars - Avril 2025 (6 semaines)</div>
+        <div class="tl-card">
+          <h3>Technicien Support IT — Stage</h3>
+          <div class="tl-where">Mairie de Mauguio-Carnon, Mauguio</div>
+          <p>Administration systèmes, gestion des accès et support IT (réseau, postes de travail).</p>
+          <ul>
+            <li>Installation et administration des infrastructures informatiques et configuration des postes de travail</li>
+            <li>Assistance aux employés dans le dépannage quotidien de leurs problèmes informatiques liés au réseau.</li>
+            <li>Participation active aux réunions internes sur la stratégie informatique.</li>
+            <li>Gestion des comptes, droits d'accès et permissions pour les utilisateurs internes.</li>
+            <li>onfiguration des postes de travail des nouveaux arrivants, gestion des comptes et des habilitations.</li>
+            <li>Déploiement et maintenance des systèmes d'exploitation Windows et Linux.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Juin 2024 (4 semaines)</div>
+        <div class="tl-card">
+          <h3>Administrateur systèmes et réseaux — Stage</h3>
+          <div class="tl-where">Crous Occitanie, Montpellier</div>
+          <p>Déploiement et configuration réseau (switches/routeurs), sauvegardes et optimisation de l'infrastructure (VLANs).</p>
+          <ul>
+            <li>Mise en place et configuration de routeurs, switches (Cisco, Aruba, Ubiquiti )</li>
+            <li>Réalisation régulière de sauvegardes des données critiques sur les switches pour prévenir la perte d'informations importantes.</li>
+            <li>Refonte des VLANs et installation de switches sur projet en équipe.</li>
+          </ul>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VEILLE IT ===================== -->
+<section id="veille" class="section">
+  <div class="container">
+    <p class="section-label reveal">06 — Veille IT</p>
+    <h2 class="section-title reveal">Actualités <span>tech</span></h2>
+
+    <div class="veille-grid">
+
+      <div class="article-card reveal">
+        <div class="article-img" style="background:linear-gradient(135deg,#080f1a,#0d1f38)">🤖</div>
+        <div class="article-body">
+          <div class="article-category">Intelligence Artificielle</div>
+          <h3>GPT-5 : ce que les développeurs doivent savoir</h3>
+          <p>Analyse des nouvelles capacités de raisonnement et d'impact sur le métier de développeur. Comment intégrer les LLMs dans ses projets ?</p>
+          <div class="article-footer">
+            <span class="article-date">Mars 2025</span>
+            <a href="#" class="article-link">Lire <i data-lucide="arrow-right" style="width:11px;height:11px"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card reveal">
+        <div class="article-img" style="background:linear-gradient(135deg,#080f1a,#0a1e10)">🐳</div>
+        <div class="article-body">
+          <div class="article-category">DevOps</div>
+          <h3>Docker vs Podman : lequel choisir en 2025 ?</h3>
+          <p>Comparaison des deux solutions de conteneurisation, leurs avantages en termes de sécurité, de performance et d'adoption en entreprise.</p>
+          <div class="article-footer">
+            <span class="article-date">Fév. 2025</span>
+            <a href="#" class="article-link">Lire <i data-lucide="arrow-right" style="width:11px;height:11px"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card reveal">
+        <div class="article-img" style="background:linear-gradient(135deg,#14080a,#280d12)">🔒</div>
+        <div class="article-body">
+          <div class="article-category">Cybersécurité</div>
+          <h3>Top 10 OWASP 2025 : les nouvelles vulnérabilités web</h3>
+          <p>Décryptage des nouvelles menaces identifiées par l'OWASP et bonnes pratiques pour sécuriser ses applications web dès le développement.</p>
+          <div class="article-footer">
+            <span class="article-date">Janv. 2025</span>
+            <a href="#" class="article-link">Lire <i data-lucide="arrow-right" style="width:11px;height:11px"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card reveal">
+        <div class="article-img" style="background:linear-gradient(135deg,#0a0f00,#1a1e00)">⚡</div>
+        <div class="article-body">
+          <div class="article-category">Web Performance</div>
+          <h3>Les Core Web Vitals en 2025 : guide pratique</h3>
+          <p>Comment optimiser LCP, FID et CLS pour améliorer l'expérience utilisateur et le référencement naturel de ses applications web.</p>
+          <div class="article-footer">
+            <span class="article-date">Déc. 2024</span>
+            <a href="#" class="article-link">Lire <i data-lucide="arrow-right" style="width:11px;height:11px"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card reveal">
+        <div class="article-img" style="background:linear-gradient(135deg,#050a14,#0a1426)">☁️</div>
+        <div class="article-body">
+          <div class="article-category">Cloud</div>
+          <h3>Serverless vs microservices : état de l'art</h3>
+          <p>Analyse des tendances d'architecture cloud en 2025. Quand opter pour le serverless et quand conserver une architecture microservices ?</p>
+          <div class="article-footer">
+            <span class="article-date">Nov. 2024</span>
+            <a href="#" class="article-link">Lire <i data-lucide="arrow-right" style="width:11px;height:11px"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card reveal">
+        <div class="article-img" style="background:linear-gradient(135deg,#0f0a00,#201500)">🦀</div>
+        <div class="article-body">
+          <div class="article-category">Langages</div>
+          <h3>Rust dans le web : WebAssembly et au-delà</h3>
+          <p>Exploration de l'adoption croissante de Rust dans le développement web, ses cas d'usage via WebAssembly et son intégration avec JavaScript.</p>
+          <div class="article-footer">
+            <span class="article-date">Oct. 2024</span>
+            <a href="#" class="article-link">Lire <i data-lucide="arrow-right" style="width:11px;height:11px"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INTERESTS ===================== -->
+<section id="interests" class="section">
+  <div class="container">
+    <p class="section-label reveal">07 — Centres d'intérêt</p>
+    <h2 class="section-title reveal">Ce qui me <span>passionne</span></h2>
+
+    <div class="interests-grid">
+      <div class="interest-item reveal">
+        <span class="interest-icon">🌟</span>
+        <h4>Pop Culture</h4>
+      </div>
+      <div class="interest-item reveal">
+        <span class="interest-icon">🥊</span>
+        <h4>Sports de combat</h4>
+      </div>
+      <div class="interest-item reveal">
+        <span class="interest-icon">✏️</span>
+        <h4>Dessins</h4>
+      </div>
+      <div class="interest-item reveal">
+        <span class="interest-icon">🔒</span>
+        <h4>Cybersécurité</h4>
+      </div>
+      <div class="interest-item reveal">
+        <span class="interest-icon">☁️</span>
+        <h4>Cloud Computing</h4>
+      </div>
+      <div class="interest-item reveal">
+        <span class="interest-icon">🎬</span>
+        <h4>Cinéma</h4>
+      </div>
+      <div class="interest-item reveal">
+        <span class="interest-icon">⚡</span>
+        <h4>Hackathons</h4>
+      </div>
+      <div class="interest-item reveal">
+        <span class="interest-icon">🎵</span>
+        <h4>Musique</h4>
+      </div>
+      <div class="interest-item reveal">
+        <span class="interest-icon">🗺️</span>
+        <h4>Voyages</h4>
+      </div>
+      <div class="interest-item reveal">
+        <span class="interest-icon">📚</span>
+        <h4>Tech Books</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section">
+  <div class="container">
+    <p class="section-label reveal">08 — Contact</p>
+    <h2 class="section-title reveal">Travaillons <span>ensemble</span></h2>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p style="color:#9aaabf;margin-bottom:24px;font-size:1rem;">
+          Je suis ouvert à toute opportunité d'alternance, de stage ou de collaboration sur des projets intéressants. N'hésitez pas à me contacter !
+        </p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i data-lucide="mail" style="width:18px;height:18px"></i>
+          </div>
+          <div class="contact-item-text">
+            <h4>Email</h4>
+            <a href="mailto:erwan.pichet34@gmail.com">erwan.pichet34@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+              </svg>
+
+          </div>
+          <div class="contact-item-text">
+            <h4>LinkedIn</h4>
+            <a href="https://www.linkedin.com/in/erwan-pichet-1698712b8" target="_blank" rel="noopener noreferrer">linkedin.com/in/erwan-pichet</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </div>
+          <div class="contact-item-text">
+            <h4>GitHub</h4>
+            <a href="#" target="_blank">github.com/erwanpichet</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i data-lucide="map-pin" style="width:18px;height:18px"></i>
+          </div>
+          <div class="contact-item-text">
+            <h4>Localisation</h4>
+            <span>Montpellier, France </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Prénom</label>
+              <input type="text" id="fname" placeholder="Jean" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Nom</label>
+              <input type="text" id="lname" placeholder="Martin" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="jean.martin@exemple.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" placeholder="Proposition d'alternance" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Votre message…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center">
+            <i data-lucide="send" style="width:15px;height:15px"></i>
+            Envoyer le message
+          </button>
+          <div class="form-success" id="form-success">
+            ✓ Message envoyé ! Je vous répondrai dans les plus brefs délais.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="nav-logo" style="font-size:1.4rem">Erwan<span class="dot">.</span>P</div>
+
+      <ul class="footer-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="#" class="social-btn" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/erwan-pichet-1698712b8" class="social-btn" target="_blank"  rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+              </svg>
+        </a>
+        <a href="mailto:erwan.pichet34@gmail.com" class="social-btn" aria-label="Email">
+          <i data-lucide="mail" style="width:16px;height:16px"></i>
+        </a>
+      </div>
+
+      <p class="footer-copy">
+        © 2026 <span>Erwan Pichet</span> — Conçu &amp; développé avec ❤️ et <span>#BBFF34</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== BACK TO TOP ===================== -->
+<button id="back-top" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i data-lucide="arrow-up" style="width:18px;height:18px"></i>
+</button>
+
+<script src="script.js"></script>
+
+</body>
